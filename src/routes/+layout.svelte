@@ -1,8 +1,8 @@
 <div class="app">
 	<header>
-		<a href="/">Мой блог</a>
+		<span>Мой блог</span>
 	</header>
-	<div>
+	<div class="content">
 		<slot />
 	</div>
 	<footer>
@@ -16,6 +16,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		min-height: 100vh;
+		overflow: scroll;
 	}
 	header,
 	footer {
@@ -28,13 +29,21 @@
 	header {
 		font-size: 30px;
 		padding: 10px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.content {
+		margin-top: 50px;
+		margin-bottom: 40px;
 	}
 	footer {
 		font-size: 20px;
 		padding: 5px;
-	}
-	a {
-		color: white;
-		text-decoration: none;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
 	}
 </style>

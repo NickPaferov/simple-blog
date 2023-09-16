@@ -32,4 +32,10 @@
 		display: flex;
 		flex-direction: column;
 	}
+	@media screen and (max-width: 768px) {
+		.item {
+			flex-direction: column;
+			width: 300px;
+		}
+	}
 </style>

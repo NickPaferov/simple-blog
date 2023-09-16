@@ -65,4 +65,14 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
+	@media screen and (max-width: 768px) {
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.btnBlock {
+			gap: 10px;
+		}
+	}
 </style>

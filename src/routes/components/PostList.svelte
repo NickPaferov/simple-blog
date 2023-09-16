@@ -36,4 +36,9 @@
 		font-size: 30px;
 		opacity: 0.7;
 	}
+	@media screen and (max-width: 768px) {
+		.list {
+			gap: 30px;
+		}
+	}
 </style>

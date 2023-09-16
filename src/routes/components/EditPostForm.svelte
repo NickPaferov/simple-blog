@@ -3,7 +3,7 @@
 	import { createEventDispatcher } from 'svelte';
 
 	export let post: PostType;
-	
+
 	const dispatch = createEventDispatcher();
 
 	let postHeaderValue: string = post.postHeader;

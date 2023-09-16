@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PostType } from '../../lib/types';
-	
+
 	export let post: PostType;
 </script>
 
@@ -22,13 +22,26 @@
 		border: 1px solid black;
 		border-radius: 5px;
 		padding: 5px;
-		min-width: 500px;
+		width: 500px;
 	}
 	.postHeader {
 		font-weight: bold;
-		font-size: 30px;
+		font-size: 24px;
 	}
 	.postText {
 		font-size: 20px;
+	}
+	@media screen and (max-width: 768px) {
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 300px;
+			margin: auto;
+		}
+		.postHeader {
+			font-weight: bold;
+			font-size: 24px;
+		}
 	}
 </style>
